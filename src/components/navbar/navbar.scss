@@ -1,0 +1,121 @@
+@import '../../responsive.scss';
+
+nav{
+    height: 100px;
+    //width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a{
+        transition: all 0.2s ease;
+
+        @include sm{
+            display: none;
+        }
+
+        &:hover{
+            scale: 1.05;
+        }
+    }
+
+
+    .left{
+
+        flex: 3;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        background-color:rgb(233, 232, 239);
+        height: 100px;
+        gap: 70px;
+
+        .logo{
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            img{
+                width: 25px;
+            }
+
+            span{
+                @include med{
+                    display: initial;
+                }
+
+                @include sm{
+                    display: initial;
+                }
+            }
+        }
+
+    }
+
+    .right{
+        flex: 3;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        gap: 15px;
+        background-color:rgb(233, 232, 239);
+        height: 100px;
+
+        a{
+            padding: 12px 24px;
+            margin: 20px;
+        }
+
+        .register{
+            font-weight:500;
+            font-size: larger;
+            font-family:'Roboto', sans-serif;
+            background-color: rgb(161, 226, 154);
+            
+        }
+
+        .menuIcon{
+            display: none;
+            z-index: 999;
+
+            img{
+                width: 30px;
+                height: 30px;
+            }
+
+            @include sm{
+                display: inline;
+            }
+        }
+
+        .menu{
+            position: absolute;
+            top: 0;
+            right: -50%;
+            background-color: black;
+            color: white;
+            height: 100vh;
+            width: 50%;
+            transition: all 1s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+
+            &.active{
+                right: 0;
+            }
+
+            @include sm{
+                a{
+                    display: initial;
+                }
+            }
+
+        }
+
+    }
+}

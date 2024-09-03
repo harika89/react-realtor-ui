@@ -1,0 +1,68 @@
+@import "../../responsive.scss";
+
+.homePage {
+    display: flex;
+    /* Optional: Add height if needed */
+    height: 100%;
+    justify-content: center; /* Horizontally center the content */
+    //align-items:center; /* Vertically center the content */
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    
+
+    .textContainer {
+        flex: 3;
+        margin-top: 0%; //adjust vertical-scrolling
+        /* Optional: Add some styling for visibility */
+        h1 {
+            font-size: 2.5rem; /* Adjust as needed */
+            margin-bottom: 0.5rem; /* Space between heading and paragraph */
+        }
+        
+        p {
+            font-size: 1.25rem; /* Adjust as needed */
+        }
+
+        
+
+        .wrapper{
+            padding-right: 100px;
+            //align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            height: 100%;
+        }
+
+        .boxes{
+            display: flex;
+            justify-content:space-around;
+
+            h1{
+                font-size: 25px;
+            }
+
+            h2{
+                font-size: 20px;
+                font-weight: 500;
+
+            }
+        }
+
+
+         
+    }
+
+    .imgContainer {
+        flex: 2;
+        background-color: rgb(245, 239, 221);
+        //position:absolute
+
+        img{
+            width:100%;
+
+        }
+
+    }
+}
