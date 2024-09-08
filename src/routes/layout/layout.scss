@@ -29,7 +29,8 @@
 
     .content{
         //background-color: cornsilk;
-        flex: 1;
+        //flex: 1;
+        height: calc(100vh - 100px);  //scroll through the page, see listpage wrapper
     }
 
 
