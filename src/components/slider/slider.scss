@@ -1,0 +1,89 @@
+
+@import "../../responsive.scss";
+.slider {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    gap: 20px;
+
+    .fullSlider{
+        position: absolute;
+        width: 100vw; //full screen
+        height: 100vh;
+        top:0;
+        left: 0;
+        display: flex;
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+
+        .arrow{
+           
+            flex: 1;
+            justify-content: center;
+            text-align: center;
+            
+             /* Ensure arrows appear on top of the image */
+
+            img{
+                width: 20px;
+
+                &.right {
+                    transform: rotate(180deg);
+                    
+                }
+            }
+
+        }
+
+        .imgContainer{
+            flex: 10;  //images will be 10x bigger than arrow
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        .close{
+            position: absolute;
+            top:0;
+            right: 0;
+            color: white;
+            font-size: 30px;
+            padding: 30px;
+            cursor: pointer;
+        }
+
+
+    }
+  
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  
+    .bigPicture {
+      flex: 3;
+  
+    }
+    .smallPictures {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+  
+  
+      img {
+        height: 100px;
+  
+      }
+    }
+  }
