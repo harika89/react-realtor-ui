@@ -1,6 +1,7 @@
 import './singlePage.scss'
 import Slider from '../../components/slider/Slider';
 import { singlePostData,userData } from '../../lib/dummydata';
+import Map from '../../components/map/Map';
 
 function SinglePage(){
     return (
@@ -29,7 +30,19 @@ function SinglePage(){
                 </div>
             </div>
             <div className='features'>
-            <div className='wrapper'>
+                <div className='wrapper'>
+                <h3 className="title">Location</h3>
+                <div className='mapContainer'>
+
+                <Map items={[singlePostData]}/>
+
+                </div>
+
+                <div className='buttons'>
+                <button><img src="/chat.png" alt="" />Send a Message</button>
+                <button><img src="/save.png" alt="" />Save the Place</button>
+                </div>
+                    
 
             </div>
             </div>
