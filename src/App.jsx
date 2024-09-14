@@ -5,6 +5,7 @@ import Layout from "./routes/layout/layout";
 import Login from "./routes/login/login.jsx";
 import SinglePage from "./routes/singlePage/singlePage.jsx";
 import Register from "./routes/register/register.jsx";
+import ProfilePage from "./routes/profilePage/profilePage.jsx";
 
 import {
   createBrowserRouter,
@@ -31,10 +32,10 @@ function App() {
           path:"/:id",
           element:<SinglePage/>
         },
-        // {
-        //   path:"/profile",
-        //   element:<ProfilePage/>
-        // },
+        {
+          path:"/profile",
+          element:<ProfilePage/>
+        },
         {
           path:"/login",
           element:<Login/>
