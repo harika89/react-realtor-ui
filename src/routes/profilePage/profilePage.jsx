@@ -1,3 +1,4 @@
+import Chat from '../../components/chat/chat';
 import List from '../../components/list/list';
 import './profilePage.scss';
 
@@ -28,7 +29,7 @@ function ProfilePage(){
             </div>
             <div className='chatContainer'>
                 <div className='wrapper'>
-                    <h1>Chat</h1>
+                    <Chat></Chat>
                 </div>
             </div>
         </div>
