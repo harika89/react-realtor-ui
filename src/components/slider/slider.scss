@@ -8,6 +8,7 @@
 
     .fullSlider{
         position: absolute;
+        z-index: 9999;
         width: 100vw; //full screen
         height: 100vh;
         top:0;
